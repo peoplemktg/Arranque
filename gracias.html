@@ -1,0 +1,152 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ya eres parte de Arranque Digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* ===== Tokens People Marketing ===== */
+:root{
+--orange-50:#FFF1EC;--orange-100:#FFDCD1;--orange-200:#FFB8A3;--orange-300:#FF8E6D;--orange-400:#FF6A42;--orange-500:#FF4419;--orange-600:#E0330A;--orange-700:#B32706;--orange-800:#7F1C05;
+--teal-50:#EEF7F5;--teal-100:#D3EBE6;--teal-200:#A8D6CD;--teal-300:#78BDB0;--teal-400:#56AB9C;--teal-500:#3F9C8C;--teal-600:#2F8072;--teal-700:#256459;--teal-800:#1A4740;
+--ink:#111111;--white:#FFFFFF;
+--gray-900:#111111;--gray-800:#2A2A2A;--gray-700:#444444;--gray-600:#636363;--gray-500:#8A8A8A;--gray-400:#B5B5B5;--gray-300:#D6D6D6;--gray-200:#E6E6E6;--gray-100:#F2F2F2;--gray-50:#F8F8F8;
+--red-500:#C8261B;--red-50:#FDEDEB;--amber-500:#E8A317;--amber-50:#FDF5E4;
+
+--bg:var(--white);--bg-inverse:var(--ink);
+--surface-card:var(--white);--surface-muted:var(--gray-50);--surface-sunken:var(--gray-100);--surface-accent:var(--orange-50);--surface-teal:var(--teal-50);
+--fg-1:var(--ink);--fg-2:var(--gray-700);--fg-3:var(--gray-600);--fg-disabled:var(--gray-400);--fg-inverse:var(--white);--fg-on-accent:var(--white);
+--accent:var(--orange-500);--accent-hover:var(--orange-600);--accent-press:var(--orange-700);--accent-soft:var(--orange-50);
+--secondary:var(--teal-500);--secondary-hover:var(--teal-600);--secondary-soft:var(--teal-50);--secondary-text:var(--teal-700);
+--border:var(--gray-200);--border-strong:var(--ink);--border-subtle:var(--gray-100);
+--focus-ring:var(--orange-200);
+--success:var(--teal-600);--success-soft:var(--teal-50);--error:var(--red-500);--error-soft:var(--red-50);--warning:var(--amber-500);--warning-soft:var(--amber-50);--info:var(--ink);--info-soft:var(--gray-100);
+--text-link:var(--ink);--text-link-hover:var(--accent);
+}
+
+:root{
+--font-sans:'Archivo','Helvetica Neue',Helvetica,Arial,sans-serif;
+--font-display:var(--font-sans);
+--font-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+--fw-light:300;--fw-regular:400;--fw-medium:500;--fw-semibold:600;--fw-bold:700;--fw-black:800;
+--fs-display-xl:104px;--fs-display:80px;--fs-h1:56px;--fs-h2:40px;--fs-h3:28px;--fs-h4:22px;--fs-body-lg:20px;--fs-body:17px;--fs-small:15px;--fs-caption:13px;--fs-eyebrow:13px;
+--lh-tight:0.95;--lh-snug:1.1;--lh-heading:1.2;--lh-body:1.55;
+--ls-display:-0.04em;--ls-heading:-0.02em;--ls-body:0;--ls-eyebrow:0.32em;
+
+--text-display:var(--fw-black) var(--fs-display)/var(--lh-tight) var(--font-display);
+--text-h1:var(--fw-black) var(--fs-h1)/var(--lh-snug) var(--font-display);
+--text-h2:var(--fw-bold) var(--fs-h2)/var(--lh-snug) var(--font-display);
+--text-h3:var(--fw-bold) var(--fs-h3)/var(--lh-heading) var(--font-sans);
+--text-h4:var(--fw-semibold) var(--fs-h4)/var(--lh-heading) var(--font-sans);
+--text-body:var(--fw-regular) var(--fs-body)/var(--lh-body) var(--font-sans);
+--text-body-lg:var(--fw-regular) var(--fs-body-lg)/var(--lh-body) var(--font-sans);
+--text-small:var(--fw-regular) var(--fs-small)/var(--lh-body) var(--font-sans);
+--text-eyebrow:var(--fw-regular) var(--fs-eyebrow)/1 var(--font-sans);
+}
+
+:root{
+--space-0:0;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px;--space-6:32px;--space-7:48px;--space-8:64px;--space-9:96px;--space-10:128px;
+--container:1200px;--container-wide:1360px;--gutter:24px;--section-y:var(--space-9);
+--radius-0:0;--radius-sm:4px;--radius-md:8px;--radius-lg:16px;--radius-xl:24px;--radius-pill:999px;
+--border-w:1px;--border-w-strong:2px;--bar-h:10px;
+}
+
+:root{
+--shadow-0:none;
+--shadow-1:0 1px 2px rgba(17,17,17,.06),0 1px 1px rgba(17,17,17,.04);
+--shadow-2:0 10px 28px -12px rgba(17,17,17,.22);
+--shadow-3:0 24px 60px -20px rgba(17,17,17,.32);
+--ring:0 0 0 3px var(--focus-ring);
+--ease-out:cubic-bezier(.2,.7,.2,1);--ease-in-out:cubic-bezier(.6,0,.3,1);
+--dur-fast:120ms;--dur:200ms;--dur-slow:360ms;
+--overlay:rgba(17,17,17,.56);
+}
+
+/* ===== Página ===== */
+
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% 0%,var(--orange-600) 0%,var(--ink) 42%,var(--ink) 100%);color:var(--fg-1);font:var(--text-body)}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px}
+.ico{display:inline-flex;flex:none;width:20px;height:20px;color:inherit}.ico svg{width:100%;height:100%;stroke:currentColor;fill:none}.ico svg[fill="currentColor"]{fill:currentColor}
+h1{margin:0;font-family:var(--font-display);letter-spacing:var(--ls-display);text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+/* hero */
+.hero{color:#fff;padding:56px 0 44px;text-align:center;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-60px;bottom:-80px;width:280px;height:280px;border-radius:50%;background:var(--secondary);opacity:.22;filter:blur(4px)}
+.emoji{font-size:52px;line-height:1;display:block;margin-bottom:18px}
+.hero h1{font-weight:800;font-size:clamp(30px,7.4vw,44px);line-height:1.14;letter-spacing:-.02em;position:relative;z-index:1}
+.hero p{margin-top:16px;color:var(--gray-300);font-size:18px;max-width:480px;margin-inline:auto;position:relative;z-index:1}
+/* video */
+.vid{padding:36px 0 8px}
+.player{position:relative;aspect-ratio:16/9;border-radius:var(--radius-lg);background:var(--ink);overflow:hidden;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-3)}
+.player .play{width:64px;height:64px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex:none}
+.player .play .ico{width:26px;height:26px;color:var(--ink)}
+.player .cap{position:absolute;bottom:14px;left:14px;color:var(--gray-400);font:400 12px/1 var(--font-mono)}
+/* primary CTA */
+.reto{padding:32px 0 8px}
+.btn.primary{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:76px;padding:0 22px;border-radius:var(--radius-pill);border:2px solid var(--ink);background:var(--ink);color:#fff;font:800 21px/1.2 var(--font-sans);text-decoration:none;transition:background var(--dur) var(--ease-out),transform var(--dur-fast) var(--ease-out)}
+.btn.primary:hover{background:var(--accent);border-color:var(--accent)}
+.btn.primary:active{transform:scale(.97)}
+.btn.primary .emo{font-size:26px;line-height:1}
+.btn.primary .ico{width:24px;height:24px}
+.acts{display:flex;flex-direction:column;gap:16px;padding:20px 0}
+.reto,.acts,.vid{position:relative;z-index:1}
+/* mas alla */
+.beyond{margin-top:8px;border:2px solid var(--secondary);border-radius:var(--radius-xl);padding:26px;display:flex;flex-direction:column;gap:16px;position:relative;background:#fff}
+.beyond .tag{position:absolute;top:-13px;left:20px;background:var(--secondary);color:#fff;font:700 11px/1 var(--font-sans);letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:99px}
+.beyond h3{margin:6px 0 0;font:800 22px/1.25 var(--font-sans);letter-spacing:-.01em;color:var(--fg-1)}
+.beyond p{font-size:15px;line-height:1.5;color:var(--fg-2)}
+.btn.upsellbtn{min-height:58px;padding:0 20px;border-radius:var(--radius-pill);background:var(--secondary);border:2px solid var(--secondary);color:#fff;font:700 17px/1.2 var(--font-sans);display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none}
+.btn.upsellbtn:hover{background:var(--secondary-hover);border-color:var(--secondary-hover)}
+.btn.upsellbtn .ico{width:20px;height:20px}
+/* comunidad */
+.community{margin:12px 0 0;background:rgba(0,0,0,.28);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius-xl);padding:32px 26px;text-align:center;color:#fff;display:flex;flex-direction:column;gap:16px;align-items:center}
+.community .icowa{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center}
+.community .icowa .ico{width:26px;height:26px;color:#fff}
+.community h3{margin:0;font:800 24px/1.25 var(--font-sans);letter-spacing:-.01em}
+.community p{color:var(--gray-300);font-size:16px;max-width:400px}
+.btn.community-btn{width:100%;min-height:58px;padding:0 20px;border-radius:var(--radius-pill);background:#25D366;border:2px solid #25D366;color:#fff;font:700 17px/1.2 var(--font-sans);display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none}
+.btn.community-btn:hover{filter:brightness(1.08)}
+.btn.community-btn .ico{width:20px;height:20px}
+/* follow + logo close */
+.follow{padding:56px 0 28px;display:flex;flex-direction:column;align-items:center;gap:22px}
+.follow .l{font:700 15px/1 var(--font-sans);letter-spacing:.24em;text-transform:uppercase;color:#fff}
+.follow .row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+.follow a{display:inline-flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font:700 16px/1 var(--font-sans);background:#fff;padding:14px 22px;border-radius:99px;transition:transform var(--dur-fast) var(--ease-out)}
+.follow a:hover{transform:translateY(-2px)}
+.follow a .ico{width:22px;height:22px}
+.close{padding:12px 0 56px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.close .logo{height:64px;display:block;filter:brightness(0) invert(1)}
+.close span{font:500 15px/1 var(--font-sans);color:var(--gray-300)}
+@media (min-width:720px){
+.hero{padding:76px 0 60px}
+.player{max-width:640px;margin:0 auto}
+.acts{max-width:520px;margin:0 auto}
+.beyond,.community{padding:36px}
+}
+</style></head>
+<body>
+<section class="hero wrap"><span class="emoji">🎉</span>
+<h1>¡Listo! Ya eres parte de Arranque Digital</h1>
+<p>Mira el video de bienvenida — ahí te decimos qué hacer primero.</p>
+</section>
+<div class="vid wrap"><div class="player"><span class="play"><span class="ico"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8V4z"/></svg></span></span><span class="cap">Video de bienvenida · 2:14</span></div></div>
+<div class="acts wrap">
+<a class="btn primary" href="#reto"><span class="emo">🔥</span>Entra a tu Reto de 7 días<span class="ico"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+
+<div class="beyond"><span class="tag">Ir más allá</span>
+<h3>Tu negocio ya está más avanzado. Esto es para ti.</h3>
+<p>Si quieres que alguien revise tu caso puntual y te diga exactamente qué hacer, esto es lo que sigue.</p>
+<a class="btn upsellbtn" href="#upsell">Súmale la Sesión de Claridad 1:1 — $97<span class="ico"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+</div>
+
+<div class="community">
+<span class="icowa"><span class="ico"><svg width="1em" height="1em" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.5 3.58 1.44 5.09L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C22 6.45 17.5 2 12.04 2zm0 18.14a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.37c0-4.55 3.7-8.25 8.25-8.25 4.55 0 8.25 3.7 8.25 8.25s-3.7 8.23-8.26 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.7-.8-.23-.08-.39-.12-.56.12-.17.25-.64.8-.79.96-.14.17-.29.19-.54.06-1.45-.72-2.4-1.29-3.35-2.93-.25-.44.25-.41.72-1.36.08-.16.04-.3-.03-.42-.08-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.42-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.13.17 1.75 2.67 4.24 3.64 2.1.82 2.53.66 2.99.62.46-.04 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.1-.23-.16-.46-.25z"/></svg></span></span>
+<h3>No olvides unirte a la comunidad 👋</h3>
+<p>Es donde resolvemos tus dudas, compartimos casos y te acompañamos día a día.</p>
+<a class="btn community-btn" href="#whatsapp">Únete a la comunidad de WhatsApp<span class="ico"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+</div>
+</div>
+<div class="follow wrap"><span class="l">Síguenos</span><div class="row">
+<a href="#" aria-label="Instagram"><span class="ico" style="display:inline-flex"><svg fill="currentColor" width="1em" height="1em" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.897 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.897-.421-.419-.69-.824-.897-1.38-.165-.42-.36-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.06-1.17.255-1.814.42-2.234.207-.57.477-.96.897-1.381.419-.419.81-.689 1.379-.896.42-.165 1.051-.36 2.221-.421 1.275-.045 1.65-.06 4.859-.06zm0 3.678a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 1 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.846-10.405a1.441 1.441 0 1 1-2.883 0 1.441 1.441 0 1 1 2.883 0z"/></svg></span>Instagram</a>
+<a href="#" aria-label="Sitio web"><span class="ico"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/></svg></span>peoplemarketing.us</a>
+</div></div>
+<div class="close wrap"><img class="logo" src="logo-people.png" alt="People Marketing"><span>Personas primero.</span></div>
+</body></html>
